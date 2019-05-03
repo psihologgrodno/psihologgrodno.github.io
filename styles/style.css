@@ -1,17 +1,78 @@
-#div1 {
-  height: 250px;
-  background-color: rgb(200, 200, 200)
+.theme-color-pink {
+  background-color: rgb(250, 225, 225) !important;
 }
 
-#div2 {
-  height: 250px;
-  background-color: rgb(235, 245, 245)
+.theme-color-grey {
+  background-color: rgb(200, 200, 200) !important;
 }
 
-#person {
-  margin-top: -75px;
+.theme-color-grey-light {
+  background-color: rgb(240, 240, 240) !important;
 }
 
-#job {
-  margin-top: 80px;
+.theme-color-aqua {
+  background-color: rgb(235, 245, 245) !important;
 }
+
+.theme-color-brown {
+  background-color: rgb(230, 200, 180) !important;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#personContainer {
+  height: 200px;
+}
+
+#jobContainer {
+  height: 200px;
+}
+
+.h1-title {
+  font-size: 5.5em;
+}
+
+.h2-title {
+  font-size: 3em;
+}
+
+.service-description-inner {
+  width: 225px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .h1-title {
+    font-size: 4.5em;
+  }
+
+  #personContainer {
+    height: 250px;
+  }
+
+  #jobContainer {
+    height: 250px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .h1-title {
+    font-size: 4em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
