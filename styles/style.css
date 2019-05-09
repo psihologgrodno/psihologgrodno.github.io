@@ -76,7 +76,17 @@
   font-size: 3em;
 }
 
+.h3-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
 /* Main - methods */
+
+#serviceContainer {
+  min-height: 550px;
+}
 
 .service-container {
   margin: 0 calc((100% - 225px) * 0.5);
@@ -92,6 +102,7 @@
   font-size: 2em;
   font-weight: 500;
   line-height: 1;
+  min-height: 100px;
 }
 
 .service-description {
@@ -111,26 +122,24 @@
 /* Main - information */
 #mainPhoto {
   width: 100%;
-  height: 100%;
-  max-height: 475px;
+  height: 700px;
   object-fit: cover;
 }
 
 .info-container {
-  height: 100%;
   margin: 0 calc((100% - 300px) * 0.5);
 }
 
 .info-name {
-  min-height: 100px;
-  padding-top: 25px;
+  min-height: 200px;
+  padding-top: 75px;
   font-size: 2.5em;
   font-weight: bold;
   line-height: 1;
 }
 
 .info-description {
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .info-description-inner {
@@ -140,6 +149,42 @@
 .info-link {
   padding-top: 70px;
   padding-bottom: 35px;
+}
+
+/* Help - information */
+.single-article-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.help-name {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* States - information */
+#statesContainer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.circle-template {
+  height: 75px;
+  width: 75px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle-template p {
+  font-size: 2.9em;
+  font-weight: bold;
+}
+
+/* States - information */
+#map {
+  width: 900px;
+  height: 500px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
