@@ -59,6 +59,11 @@
   transform: translateY(-50%);
 }
 
+.single-article-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Main - person & job */
 #personContainer {
   height: 200px;
@@ -122,7 +127,7 @@
 /* Main - information */
 #mainPhoto {
   width: 100%;
-  height: 700px;
+  max-height: 700px;
   object-fit: cover;
 }
 
@@ -131,8 +136,8 @@
 }
 
 .info-name {
-  min-height: 200px;
   padding-top: 75px;
+  padding-bottom: 75px;
   font-size: 2.5em;
   font-weight: bold;
   line-height: 1;
@@ -152,11 +157,6 @@
 }
 
 /* Help - information */
-.single-article-container {
-  width: 800px;
-  margin: 0 auto;
-}
-
 .help-name {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -181,10 +181,52 @@
   font-weight: bold;
 }
 
-/* States - information */
-#map {
-  width: 900px;
-  height: 500px;
+/* Map - information */
+#mapContainerInner {
+  max-width: 800px;
+}
+
+#mapImg {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Map - information */
+.skype-link-parent div {
+  display: block;
+  width: 65px;
+  height: 24px;
+  margin-top: 6px;
+  background: url(../images/skype.png) no-repeat center center;
+}
+
+/* Contact - information */
+#addressContainerInner {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Footer - information */
+#social-list {
+  margin: 0;
+}
+
+#social-list li {
+  display: inline;
+}
+
+.social-img {
+  width: 27px;
+  height: 27px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -202,6 +244,45 @@
   #jobContainer {
     height: 250px;
   }
+
+  #mainPhotoContainer {
+    max-height: 300px; 
+  }
+
+  #mainPhoto {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .info-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .info-description {
+    min-height: 0px;
+  }
+
+  .info-link {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .help-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .service-link {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  /* States - information */
+  #statesContainer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -211,10 +292,56 @@
   .h1-title {
     font-size: 4em;
   }
+
+  .info-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .info-description {
+    min-height: 0px;
+  }
+
+  .info-link {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .help-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .service-link {
+    padding-bottom: 20px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .info-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .info-description {
+    min-height: 0px;
+  }
+
+  .info-link {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .help-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .service-link {
+    padding-bottom: 20px;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {}
