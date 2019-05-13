@@ -69,12 +69,18 @@ html * {
 }
 
 .single-article-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .single-article-container-lower-limit {
-  min-width: 800px;
+  min-width: 900px;
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Main - person & job */
@@ -202,7 +208,7 @@ html * {
 
 /* Map - information */
 #mapContainerInner {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 #mapImg {
@@ -262,11 +268,26 @@ html * {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
 }
 
 .portrait:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#personalPhoto {
+  max-width: 436px;
+}
+
+#couplePhoto {
+  max-width: 406px;
+}
+
+#groupPhoto {
+  max-width: 391px;
+}
+
+#familyPhoto {
+  max-width: 391px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
