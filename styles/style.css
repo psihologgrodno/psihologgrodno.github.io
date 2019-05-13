@@ -1,4 +1,8 @@
 /* Common */
+html {
+  height: 100%;
+}
+
 html * {
   font-size: 1.1rem;
   font-family: 'Neucha', cursive;
