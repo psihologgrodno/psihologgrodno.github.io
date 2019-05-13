@@ -125,9 +125,18 @@
 }
 
 /* Main - information */
+#mainPhotoContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/mainPhoto.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #mainPhoto {
   width: 100%;
-  max-height: 700px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -138,9 +147,6 @@
 .info-name {
   padding-top: 75px;
   padding-bottom: 75px;
-  font-size: 2.5em;
-  font-weight: bold;
-  line-height: 1;
 }
 
 .info-description {
@@ -190,6 +196,8 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  /* cursor: pointer;
+  transition: 0.3s; */
 }
 
 /* Map - information */
@@ -238,20 +246,23 @@
   }
 
   #personContainer {
-    height: 250px;
+    height: 200px;
   }
 
   #jobContainer {
-    height: 250px;
+    height: 150px;
   }
 
   #mainPhotoContainer {
-    max-height: 300px; 
+    height: 500px;
+    background-position: top;
   }
 
   #mainPhoto {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 300px;
+    height: auto;
+    object-fit: cover;
   }
 
   .info-name {
@@ -271,6 +282,14 @@
   .help-name {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .service-name {
+    min-height: 0px;
+  }
+
+  .service-description {
+    padding-top: 25px;
   }
 
   .service-link {
@@ -283,6 +302,10 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  .modal-content {
+    width: 100%;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -293,6 +316,19 @@
     font-size: 4em;
   }
 
+  #personContainer {
+    height: 150px;
+  }
+
+  #jobContainer {
+    height: 150px;
+  }
+
+  #mainPhotoContainer {
+    height: 550px;
+    background-position: top;
+  }
+
   .info-name {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -310,6 +346,14 @@
   .help-name {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .service-name {
+    min-height: 0px;
+  }
+
+  .service-description {
+    padding-top: 25px;
   }
 
   .service-link {
@@ -319,6 +363,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  #mainPhotoContainer {
+    height: 550px;
+    background-position: top;
+  }
+
   .info-name {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -336,6 +385,14 @@
   .help-name {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .service-name {
+    min-height: 0px;
+  }
+
+  .service-description {
+    padding-top: 25px;
   }
 
   .service-link {
