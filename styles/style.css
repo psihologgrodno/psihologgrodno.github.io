@@ -318,6 +318,26 @@ html * {
   height: 300px;
 }
 
+#articleInnerContainer {
+  border: 2px solid rgb(240, 240, 240)
+}
+
+.article-title-content{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.article-content {
+  margin: 20px;
+}
+
+.article-img {
+  float: right;
+  width: 360px;
+  height: 205px;
+  margin-left: 40px; 
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .single-article-container-lower-limit {
