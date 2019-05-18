@@ -305,7 +305,7 @@ html * {
 }
 
 .card {
-  margin: 5px;
+  margin: 5px 0px;
   border: 1px solid white;
 }
 
@@ -322,8 +322,7 @@ html * {
   border: 2px solid rgb(240, 240, 240)
 }
 
-.article-title-content{
-  margin-left: 20px;
+.article-title-content {
   margin-top: 20px;
 }
 
@@ -335,7 +334,7 @@ html * {
   float: right;
   width: 360px;
   height: 205px;
-  margin-left: 40px; 
+  margin-left: 40px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -345,7 +344,7 @@ html * {
   }
 
   .single-article-container {
-    margin: 0 10px;
+    margin: 0 0px;
   }
 
   /* Main - person & job */
@@ -414,6 +413,12 @@ html * {
   /* #issues-list {
     list-style-position: inside;
   } */
+
+  .article-img {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -423,7 +428,7 @@ html * {
   }
 
   .single-article-container {
-    margin: 0 10px;
+    margin: 0 0px;
   }
 
   /* Main - person & job */
@@ -473,6 +478,12 @@ html * {
 
   .service-link {
     padding-bottom: 20px;
+  }
+
+  .article-img {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
 }
 
