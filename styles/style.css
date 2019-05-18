@@ -5,7 +5,13 @@ html {
 
 html * {
   font-size: 1.1rem;
-  font-family: 'Neucha', cursive;
+  font: normal normal normal 17px/1.4em 'open sans', sans-serif;
+  color: #000000;
+}
+
+.font_4 {
+  font: normal normal bold 38px/1.4em 'open sans', sans-serif;
+  color: #000000;
 }
 
 .theme-color-white {
@@ -40,6 +46,48 @@ html * {
   background-color: rgb(210, 225, 200) !important;
 }
 
+.navbar {
+  border-bottom: black 1px solid;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #3078BE;
+  text-decoration: none;
+}
+
+/* unvisited link */
+.navbar-nav a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.navbar-nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.navbar-nav a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+/* selected link */
+.navbar-nav .a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+/* .custom-link a{
+  font-size: 1.3rem;
+} */
+
 /* unvisited link */
 .custom-link a:link {
   color: black;
@@ -66,6 +114,11 @@ html * {
   color: blue;
   text-decoration: none;
   border-bottom: 1px solid black;
+}
+
+.states-link a:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 .vertical-center {
@@ -108,16 +161,33 @@ html * {
 
 .h1-title {
   font-size: 5.5em;
+  font-weight: 700;
 }
 
 .h2-title {
   font-size: 3em;
+  font-weight: 700;
 }
 
 .h3-title {
   font-size: 2rem;
   font-weight: 550;
   line-height: 1;
+  font-family: 'Arimo', sans-serif;
+}
+
+.font-size-sub-title
+{
+  font-size: 2.5rem;
+}
+
+.font-size-main-title
+{
+  font-size: 3.5rem;
+}
+
+.alt-font {
+  font-family: 'Arimo', sans-serif;
 }
 
 /* Main - methods */
@@ -191,8 +261,8 @@ html * {
 }
 
 .info-link {
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 /* Help - information */
@@ -248,6 +318,10 @@ html * {
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+
+#street{
+  font-weight: 600;
 }
 
 /* Footer - information */
