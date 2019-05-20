@@ -51,6 +51,16 @@ html * {
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
 .navbar-nav .nav-link {
   font-size: 20px;
 }
@@ -129,6 +139,14 @@ html * {
   transform: translateY(-50%);
 }
 
+.vertical-two-thirds {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  -ms-transform: translateY(-75%);
+  transform: translateY(-25%);
+}
+
 .single-article-container {
   max-width: 900px;
   margin: 0 auto;
@@ -155,6 +173,24 @@ html * {
   height: 200px;
 }
 
+#personContainer1 {
+  height: 500px;
+  background: rgb(200, 200, 200);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(200, 200, 200) 50%, rgb(235, 245, 245) 50%, rgb(235, 245, 245) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(200, 200, 200)), color-stop(50%, rgb(200, 200, 200)), color-stop(50%, rgb(235, 245, 245)), color-stop(100%, rgb(235, 245, 245)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(200, 200, 200) 50%, rgb(235, 245, 245) 50%, rgb(235, 245, 245) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(200, 200, 200) 50%, rgb(235, 245, 245) 50%, rgb(235, 245, 245) 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(200, 200, 200) 50%, rgb(235, 245, 245) 50%, rgb(235, 245, 245) 100%);
+  /* IE10+ */
+  background: linear-gradient(top, rgb(200, 200, 200)0%, rgb(200, 200, 200) 50%, rgb(235, 245, 245) 50%, rgb(235, 245, 245) 100%);
+  /* W3C */
+}
+
 #jobContainer {
   height: 200px;
 }
@@ -176,13 +212,11 @@ html * {
   font-family: 'Arimo', sans-serif;
 }
 
-.font-size-sub-title
-{
-  font-size: 2.5rem;
+.font-size-sub-title {
+  font-size: 2.3rem;
 }
 
-.font-size-main-title
-{
+.font-size-main-title {
   font-size: 3.5rem;
 }
 
@@ -320,7 +354,7 @@ html * {
   margin-bottom: 5px;
 }
 
-#street{
+#street {
   font-weight: 600;
 }
 
